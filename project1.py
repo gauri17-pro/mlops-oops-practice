@@ -1,9 +1,29 @@
 class chatbook:
+
+    __counter = 1
+
     def __init__(self):
+        self.id = chatbook.__counter
+        chatbook.__counter += 1
+        self.__name = 'Default User'
         self.username = ''
         self.password = ''
         self.loggedin = False
-        self.menu()
+        # self.menu()
+
+    @staticmethod
+    def get_id():
+        return chatbook.__counter
+    
+    @staticmethod
+    def set_id(val):
+        chatbook.__counter = val
+
+    def get_name(self):
+        return self.__name
+    
+    def set_name(self, name):
+        self.__name = name
 
     def menu(self):
         user_input = input("""Welcome to ChatBook! How would you like to proceed?
@@ -62,4 +82,4 @@ class chatbook:
         self.menu()
 
 
-obj = chatbook()
+# obj = chatbook()

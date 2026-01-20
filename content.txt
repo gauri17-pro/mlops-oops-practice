@@ -7,4 +7,16 @@
     > Code reusability 
     > Debugging
     > Easy to collaborate 
-     
+5. End to End Project of Chatbook 
+    > functions vs method 
+    > magic method and dunder methods 
+    > self 
+        - self belongs to object 
+        - self passes as an argument when we call a method using object 
+    > You can create attribute out of class 
+
+    > encapsulation
+    > getter and setter 
+    > static method 
+    > Inheritance 
+
